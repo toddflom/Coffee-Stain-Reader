@@ -17,13 +17,29 @@
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-G3-DmI">
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="Y3h-T4-c9U"/>
+                                    <barButtonItem systemItem="rewind" id="Y3h-T4-c9U">
+                                        <connections>
+                                            <action selector="goBack" destination="xh4-e9-tSf" id="Vr6-UN-aYb"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="U8d-9C-zAy"/>
-                                    <barButtonItem systemItem="stop" id="foa-Xu-5Rh"/>
+                                    <barButtonItem systemItem="stop" id="foa-Xu-5Rh">
+                                        <connections>
+                                            <action selector="stopLoading" destination="xh4-e9-tSf" id="ojC-dF-4n9"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S46-Ha-fzs"/>
-                                    <barButtonItem systemItem="refresh" id="I5K-OO-UtO"/>
+                                    <barButtonItem systemItem="refresh" id="I5K-OO-UtO">
+                                        <connections>
+                                            <action selector="reload" destination="xh4-e9-tSf" id="iXJ-fM-D2I"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Z48-IM-Hci"/>
-                                    <barButtonItem systemItem="fastForward" id="z0a-ue-Opp"/>
+                                    <barButtonItem systemItem="fastForward" id="z0a-ue-Opp">
+                                        <connections>
+                                            <action selector="goForward" destination="xh4-e9-tSf" id="Wbu-BT-wVG"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -40,11 +56,11 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="back" destination="Y3h-T4-c9U" id="i8i-Ms-csE"/>
+                        <outlet property="back" destination="Y3h-T4-c9U" id="laO-iQ-Z0F"/>
                         <outlet property="forward" destination="z0a-ue-Opp" id="y1M-eI-i1Y"/>
                         <outlet property="mWebView" destination="xh4-e9-tSf" id="OnN-3K-zBP"/>
                         <outlet property="refresh" destination="I5K-OO-UtO" id="k6k-6L-mKw"/>
-                        <outlet property="stop" destination="foa-Xu-5Rh" id="PyV-RD-26w"/>
+                        <outlet property="stop" destination="foa-Xu-5Rh" id="6eD-wb-zpf"/>
                         <outlet property="toolbar" destination="hWm-G3-DmI" id="JBF-Vb-hhl"/>
                         <outlet property="webView" destination="xh4-e9-tSf" id="Fqo-dZ-f6L"/>
                     </connections>

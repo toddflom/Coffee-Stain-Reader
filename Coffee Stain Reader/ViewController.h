@@ -15,6 +15,8 @@
     UIBarButtonItem *mStop;
     UIBarButtonItem *mRefresh;
     UIBarButtonItem *mForward;
+    UILabel *mPageTitle;
+    UITextField *mAddressField;
 }
 
 
@@ -24,6 +26,8 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *stop;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *refresh;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *forward;
+@property (strong, nonatomic) UILabel *pageTitle;
+@property (strong, nonatomic) UITextField *addressField;
 
 
 
