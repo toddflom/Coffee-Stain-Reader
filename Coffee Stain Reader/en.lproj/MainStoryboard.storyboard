@@ -29,9 +29,12 @@
         </scene>
     </scenes>
     <classes>
+<<<<<<< HEAD
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+=======
+>>>>>>> todd's-laptop
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
